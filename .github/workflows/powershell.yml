@@ -1,0 +1,58 @@
+# This workflow uses actions that are not certified by GitHub.
+# They are provided by a third-party and are governed by
+# separate terms of service, privacy policy, and support
+# documentation.
+#
+# https://github.com/microsoft/psscriptanalyzer-action
+# For more information on PSScriptAnalyzer in general, see
+# https://github.com/PowerShell/PSScriptAnalyzer
+
+name: PSScriptAnalyzer
+
+on:
+  push:
+    paths:
+      - .github/workflows/powershell.yml
+      - .build.ps1
+      - tests/**/*.ps1
+      - tests/**/*.psd1
+      - tools/**/*.ps1
+      - tools/**/*.psm1
+      - tools/**/*.psd1
+
+  pull_request:
+    paths:
+      - .github/workflows/powershell.yml
+      - .build.ps1
+      - tests/**/*.ps1
+      - tests/**/*.psd1
+      - tools/**/*.ps1
+      - tools/**/*.psm1
+      - tools/**/*.psd1
+
+jobs:
+  analyze:
+    name: PSScriptAnalyzer
+    runs-on: windows-latest
+    permissions:
+      actions: read
+      contents: read
+      security-events: write
+    steps:
+      - uses: actions/checkout@v2.4.0
+
+      - name: Check tools, build and tests PowerShell scripts quality
+        uses: microsoft/psscriptanalyzer-action@v1.0
+        with:
+          # Check https://github.com/microsoft/psscriptanalyzer-action for more info about the options.
+          includeDefaultRules: true
+          severity: '"Error", "Warning"'
+          path: .\
+          ignorePattern: "install"
+          recurse: true
+          output: results.sarif
+
+      - name: Upload tools, build and tests PowerShell scripts checking results
+        uses: github/codeql-action/upload-sarif@v1
+        with:
+          sarif_file: results.sarif

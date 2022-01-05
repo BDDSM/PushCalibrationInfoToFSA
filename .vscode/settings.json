@@ -1,0 +1,78 @@
+{
+	"files.exclude": {
+		".git": true,
+		"node_modules/": true,
+		"**/Thumbs.db": true,
+		"Thumbs.db": true,
+		"**/.~lock.*": true
+	},
+	"files.associations": {
+		"**/packages.config": "xml"
+	},
+	"[xml]": {
+		"editor.formatOnSave": false,
+		"editor.autoClosingBrackets": "never",
+		"files.trimTrailingWhitespace": false,
+		"files.insertFinalNewline": false
+	},
+	"xml.catalogs": [
+		".vscode/xml-schemas.xml"
+	],
+	"editor.linkedEditing": true,
+	"xml.codeLens.enabled": true,
+	"xml.validation.enabled": true,
+	"xml.validation.schema.enabled": "always",
+	"xml.validation.noGrammar": "warning",
+	"xml.validation.resolveExternalEntities": false,
+	"xml.symbols.maxItemsComputed": 30000,
+	"[powershell]": {
+		"editor.formatOnSave": true,
+		"files.trimTrailingWhitespace": true,
+		"files.insertFinalNewline": true,
+	},
+	"powershell.codeFormatting.alignPropertyValuePairs": false,
+	"powershell.codeFormatting.openBraceOnSameLine": false,
+	"powershell.codeFormatting.newLineAfterOpenBrace": false,
+	"powershell.codeFormatting.newLineAfterCloseBrace": true,
+	"powershell.codeFormatting.whitespaceBeforeOpenBrace": true,
+	"powershell.codeFormatting.whitespaceBeforeOpenParen": true,
+	"powershell.codeFormatting.whitespaceAroundOperator": true,
+	"powershell.codeFormatting.whitespaceAfterSeparator": true,
+	"powershell.codeFormatting.ignoreOneLineBlock": false,
+	"powershell.codeFormatting.preset": "Custom",
+	"editor.folding": true,
+	"editor.foldingHighlight": true,
+	"editor.foldingStrategy": "auto",
+	"editor.formatOnSave": true,
+	"editor.formatOnPaste": false,
+	"files.trimTrailingWhitespace": true,
+	"files.insertFinalNewline": true,
+	"typescript.tsc.autoDetect": "off",
+	"grunt.autoDetect": "off",
+	"jake.autoDetect": "off",
+	"gulp.autoDetect": "off",
+	"task.autoDetect": "off",
+	"conventionalCommits.autoCommit": false,
+	// "conventionalCommits.emojiFormat": "",
+	"conventionalCommits.gitmoji": true,
+	"conventionalCommits.lineBreak": "\n",
+	"conventionalCommits.promptBody": true,
+	"conventionalCommits.promptFooter": true,
+	"conventionalCommits.promptScopes": true,
+	"conventionalCommits.scopes": [
+		"ps",
+		"vscode",
+		"git",
+		"github",
+		"github-actions",
+		"deps",
+		"other",
+		"changelog",
+		"readme"
+	],
+	"conventionalCommits.showEditor": false,
+	"licenser.license": "AL2",
+	"licenser.author": "Sergei S. Betke",
+	"licenser.projectName": "Инструменты ФБУ \"Ивановский ЦСМ\"",
+	"licenser.useSingleLineStyle": true
+}

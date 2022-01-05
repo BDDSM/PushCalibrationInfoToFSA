@@ -1,0 +1,56 @@
+{
+	"version": "0.2",
+	"ignorePaths": [
+		".git",
+		".git/**",
+		".vscode/*",
+		"node_modules",
+		"**/node_modules",
+		"**/node_modules/**",
+		"node_modules/**"
+	],
+	"language": "ru,en",
+	"dictionaries": [],
+	"words": [
+		"расширения",
+		"рефакторинг",
+		"Росаккредитация",
+		"arshin",
+		"Betke",
+		"Choco",
+		"chocolately",
+		"Codacy",
+		"codecov",
+		"codeql",
+		"commitlint",
+		"Committish",
+		"compat",
+		"dependabot",
+		"deps",
+		"dirstate",
+		"distclean",
+		"editorconfig",
+		"endregion",
+		"fgis",
+		"gost",
+		"markdownlint",
+		"MSXML",
+		"NMTOKEN",
+		"Nuget",
+		"pwsh",
+		"repo",
+		"sergey",
+		"shellcheck",
+		"wagoid",
+		"xlink"
+	],
+	"ignoreRegExpList": [
+		"командлет(а|ы|е|у|ам|ах)",
+		"репозитори(й|я|ю|ем|и)",
+		"\\.gitattributes",
+		"\\[.*?\\]\\(.*?\\)"
+	],
+	"enableFiletypes": [
+		"powershell"
+	]
+}
