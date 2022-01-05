@@ -10,9 +10,10 @@
 
 ### Добавлено
 
-### Изменено
-
-### Исправлено
+- добавлен инструмент для преобразования XML файлов со сведениями о поверке
+  (по схеме Аршина `urn://fgis-arshin.gost.ru/module-verifications/import/2020-06-19`)
+  в файлы, содержащие сведения для формы ФСА
+  #2
 
 [Unreleased]: https://github.com/csm-ivanovo-ru/PushCalibrationInfoToFSA/compare/0.1.0...HEAD
 [0.1.0]: https://github.com/csm-ivanovo-ru/PushCalibrationInfoToFSA/releases/tag/0.1.0
